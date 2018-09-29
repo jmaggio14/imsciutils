@@ -22,6 +22,7 @@ matrix:
 install:
   # ND
   - pip install -r requirements.txt
+  - pip install sphinx_bootstrap_theme
   - pip install .
 
 script:
