@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'imagepypelines'
+project = 'imsciutils'
 copyright = '2018, Nathan Dileas, Ryan Hartzell, Jeff Maggio'
 author = 'Nathan Dileas, Ryan Hartzell, Jeff Maggio'
 
@@ -93,13 +93,13 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 #
 # RH -I'm currently working on this and will add at a later date - 09/29/18
 #
-html_logo = "imagepypelines-Favicon.png"
+html_logo = "ImSciUtils-Favicon.png"
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "imagepypelines",
+    'navbar_title': "ImSciUtils",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Site",
@@ -184,7 +184,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'imagepypelinesdoc'
+htmlhelp_basename = 'imsciutilsdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -211,7 +211,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'imagepypelines.tex', 'imagepypelines Documentation',
+    (master_doc, 'imsciutils.tex', 'imsciutils Documentation',
      'Nathan Dileas, Ryan Hartzell, Jeff Maggio', 'manual'),
 ]
 
@@ -221,7 +221,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'imagepypelines', 'imagepypelines Documentation',
+    (master_doc, 'imsciutils', 'imsciutils Documentation',
      [author], 1)
 ]
 
@@ -232,8 +232,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'imagepypelines', 'imagepypelines Documentation',
-     author, 'imagepypelines', 'One line description of project.',
+    (master_doc, 'imsciutils', 'imsciutils Documentation',
+     author, 'imsciutils', 'One line description of project.',
      'Miscellaneous'),
 ]
 

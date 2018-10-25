@@ -3,15 +3,15 @@ Every come up with a situation where you have have a lot of parameters
 
 
 
-This is a script  config files using the imagepypelines package
+This is a script  config files using the imsciutils package
 created by Jeff Maggio, Ryan Hartzell, Nathan Dileas
-https://github.com/jmaggio14/imagepypelines
+https://github.com/jmaggio14/imsciutils
 
 To use this script, simply modify the 'CONFIGS' variable with all variations
 of a parameter you want to test. This
 """
 
-import imagepypelines as ip
+import imsciutils as iu
 import yaml
 
 BASENAME = 'config'
@@ -31,8 +31,8 @@ CONFIGS = {'learning_rate':[.001, .01, .1],
             'momentum':[.8,.9],
             }
 
-# build a config permutator using imagepypelines
-permutation_generator = ip.util.Permuter(**CONFIGS)
+# build a config permutator using imsciutils
+permutation_generator = iu.util.Permuter(**CONFIGS)
 
 # iterating through all config permutations
 index = 1
@@ -56,10 +56,10 @@ for _,configs in permutation_generator:
 
     # checking if the file already exists
     filename = filename + '.yaml'
-    filename = ip.io.prevent_overwrite(filename)
+    filename = iu.io.prevent_overwrite(filename)
 
-    ip.comment("building '{}' with the following kwargs".format(filename) + ''.join( '\n\t{} : {}'.format(k,v) for k,v in configs.items() ))
-    ip.info(permutation_generator)
+    iu.comment("building '{}' with the following kwargs".format(filename) + ''.join( '\n\t{} : {}'.format(k,v) for k,v in configs.items() ))
+    iu.info(permutation_generator)
     # saving the config file
     with open(filename,'w') as f:
         file_str = yaml.dump(configs, default_flow_style=False)

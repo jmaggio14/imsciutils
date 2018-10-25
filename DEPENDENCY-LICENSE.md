@@ -1,7 +1,7 @@
 Jeff Maggio, Nathan Dileas, Ryan Hartzell
 
 Dependency licenses are tracked here in the interest of legal transparency and software traceability.
-imagepypelines' source uses these packages, but does not contain or copy the source code of the following packages
+imsciutils' source uses these packages, but does not contain or copy the source code of the following packages
 
 
 

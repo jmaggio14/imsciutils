@@ -8,7 +8,7 @@ to each file
 travis will run it with default arguments automatically, but for human use
 
 Example:
-    default (no modification, directory is ./imagepypelines):
+    default (no modification, directory is ./imsciutils):
         $ python enforcer.py
 
     explicit path:
@@ -60,8 +60,8 @@ ACCEPTABLE_EXTS = ['.py']
 
 LICENSE_HEADER = """@Email: jmaggio14@gmail.com
 @Website: https://www.imagepypelines.org/
-@License: https://github.com/jmaggio14/imagepypelines/blob/master/LICENSE
-@github: https://github.com/jmaggio14/imagepypelines
+@License: https://github.com/jmaggio14/imsciutils/blob/master/LICENSE
+@github: https://github.com/jmaggio14/imsciutils
 
 Copyright (c) 2018 Jeff Maggio, Nathan Dileas, Ryan Hartzell
 """
@@ -180,7 +180,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--directory',
                         help='the directory to enforce recursively',
-                        default='./imagepypelines',
+                        default='./imsciutils',
                         )
     args = parser.parse_args()
 
